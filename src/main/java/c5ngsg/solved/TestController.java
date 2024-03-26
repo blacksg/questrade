@@ -10,4 +10,9 @@ public class TestController {
     public String ci() {
         return "CI Test";
     }
+
+    @GetMapping("/CD")
+    public String cd() {
+        return "CD Test";
+    }
 }
