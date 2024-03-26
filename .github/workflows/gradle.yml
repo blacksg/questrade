@@ -22,6 +22,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        
+    # 권한 주기
+    - name: Run chmod to make gradlew executable
+      run: chmod +x ./gradlew
 
     # 2. Spring Boot 애플리케이션 빌드
     - name: Build with Gradle
